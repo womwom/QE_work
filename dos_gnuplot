@@ -1,0 +1,7 @@
+set terminal 'png'
+set output 'dos.png'
+set xlabel 'Energy (eV)'
+set ylabel 'DOS'
+set xrange [-10: 5]
+set yrange [0: 100]
+p 'YBCO6.dos' u ($1-11.199):2 w lp, 'YBCO6.dos' u ($2-11.208):4 w lp

@@ -1,0 +1,5 @@
+&dos
+prefix = 'YBCO6',
+outdir='./YBCO6.scf/',
+fildos = 'YBCO6.dos',
+/
