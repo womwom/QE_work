@@ -1,0 +1,53 @@
+
+     Program DOS v.7.2 starts on 30Dec2023 at 22:40:47 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     4 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       4
+     3812 MiB available memory on the printing compute node when the environment starts
+ 
+
+     Reading xml data from directory:
+
+     ./La2CuO4/La2CuO4.save/
+     file La.pz-spfn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  5S 5D 4F renormalized
+     file Cu.pz-dn-rrkjus_psl.1.0.0.UPF: wavefunction(s)  3D renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         741     370    105               105865    37454    5539
+     Max         742     371    106               105880    37469    5550
+     Sum        2965    1481    421               423481   149831   22171
+ 
+     Using Slab Decomposition
+ 
+
+     Tetrahedra used
+
+ 
+     DOS          :     16.34s CPU     16.81s WALL
+
+ 
+   This run was terminated on:  22:41: 4  30Dec2023            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

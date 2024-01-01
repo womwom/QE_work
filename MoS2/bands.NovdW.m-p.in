@@ -1,0 +1,6 @@
+&bands
+outdir = './NovdW/m-p',
+prefix = 'MoS2.NovdW.m-p',
+filband = 'MoS2.NovdW.m-p.band',
+lsym = .true.
+/

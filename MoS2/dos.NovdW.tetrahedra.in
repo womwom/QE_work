@@ -1,0 +1,5 @@
+&dos
+outdir = './NovdW/tetrahedra',
+prefix = 'MoS2.NovdW.tetrahedra',
+fildos = 'MoS2.NovdW.tetrahedra.dos'
+/

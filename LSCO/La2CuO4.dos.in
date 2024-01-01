@@ -1,0 +1,7 @@
+&DOS
+    prefix='La2CuO4'
+    outdir='./La2CuO4'
+    fildos='La2CuO4.dos'
+    emin=0
+    emax=25
+/

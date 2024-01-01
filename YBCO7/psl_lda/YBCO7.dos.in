@@ -1,0 +1,7 @@
+&DOS
+    prefix='YBCO7'
+    outdir='./YBCO7'
+    fildos='YBCO7.dos'
+    emin=0
+    emax=25
+/

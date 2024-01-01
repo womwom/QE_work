@@ -1,0 +1,74 @@
+&CONTROL
+calculation = 'vc-relax'
+prefix = 'YBCO.vc-relax'
+restart_mode = 'from_scratch'
+outdir='./YBCO.vc-relax'
+pseudo_dir='~/q-e/pseudo/all_pbe_UPF_v1.5'
+tprnfor   = .true.
+wf_collect    = .true.
+verbosity     = 'high'
+forc_conv_thr = 1D-3
+etot_conv_thr = 1D-4
+/
+&SYSTEM
+   ibrav            = 8
+   ntyp             = 6
+   nat              = 13
+   a = 3.82030000000000 
+   b = 3.88548000000000
+   c = 11.6834900000000
+   ecutwfc = 90
+   ecutrho = 720
+   occupations = 'smearing'
+   smearing = 'm-p'
+   degauss = 0.02
+   nspin = 2
+   starting_magnetization(4) = 0.1
+   starting_magnetization(5) = -0.1
+/
+&ELECTRONS
+    conv_thr = 1d-8
+    electron_maxstep = 500
+    mixing_mode      = 'plain'
+    mixing_beta      = 0.1
+/
+&IONS
+ion_dynamics = 'bfgs'
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Y 88.90584 y_pbe_v1.4.uspp.F.UPF
+Ba 137.327 ba_pbe_v1.uspp.F.UPF
+Cu 63.546 cu_pbe_v1.2.uspp.F.UPF
+Cu1 63.546 cu_pbe_v1.2.uspp.F.UPF
+Cu2 63.546 cu_pbe_v1.2.uspp.F.UPF
+O 15.999 o_pbe_v1.2.uspp.F.UPF
+
+K_POINTS automatic
+2 2 2 0 0 0
+
+! CELL_PARAMETERS angstrom
+! 3.82030000000000 0.00000000000000 0.00000000000000
+! 0.00000000000000 3.88548000000000 0.00000000000000
+! 0.00000000000000 0.00000000000000 11.68349000000000
+
+ATOMIC_POSITIONS (crystal)
+Y 0.5 0.5 0.5 
+Ba 0.5 0.5 0.18393 
+Ba 0.5 0.5 0.81607 
+Cu 0.0000000000 0.0000000000 0.0000000000 
+Cu1 0.0000000000 0.0000000000 0.35501 
+Cu2 0.0000000000 0.0000000000 0.64499 
+O 0.5 0.0000000000 0.37819 
+O 0.5 0.0000000000 0.62181 
+O 0.0000000000 0.5 0.37693 
+O 0.0000000000 0.5 0.62307 
+O 0.0 0.5000000000 0.0
+O 0.0000000000 0.0000000000 0.1584 
+O 0.0000000000 0.0000000000 0.8416 
+
+HUBBARD (ortho-atomic)
+U Cu1-3d 10
+U Cu2-3d 10

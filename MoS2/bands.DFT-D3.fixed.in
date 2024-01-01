@@ -1,0 +1,6 @@
+&bands
+outdir = './DFT-D3/fixed',
+prefix = 'MoS2.DFT-D3.fixed',
+filband = 'MoS2.DFT-D3.fixed.band',
+lsym = .true.
+/

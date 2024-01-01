@@ -1,0 +1,5 @@
+&dos
+outdir = './NovdW/m-p',
+prefix = 'MoS2.NovdW.m-p',
+fildos = 'MoS2.NovdW.m-p.dos'
+/

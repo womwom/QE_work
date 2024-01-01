@@ -1,0 +1,41 @@
+&control
+ calculation = 'scf'
+ prefix = 'MoS2.DFT-D3.tetrahedra',
+ tstress = .true.
+ tprnfor = .true.
+ pseudo_dir = './',
+ outdir = './DFT-D3/tetrahedra'
+ disk_io = 'low'
+ etot_conv_thr = 1.d-5
+ forc_conv_thr = 1.d-4
+/
+&system
+ ibrav = 4,
+ celldm(1) = 6.01779881561,
+ celldm(3) = 4.659156346,
+ nat = 6,
+ ntyp = 2,
+ ecutwfc = 35.0,
+ ecutrho = 280.0,
+ occupations = 'smearing'
+ smearing = 'm-p'
+ degauss = 0.005
+ vdw_corr = 'DFT-D'
+ dftd3_version = 3
+/
+&electrons
+ mixing_beta = 0.7
+ conv_thr = 1.0d-8
+/
+ATOMIC_SPECIES
+Mo  95.95  Mo_ONCV_PBE-1.0.oncvpsp.upf
+S 32.065 s_pbe_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS {crystal}
+S             0.3333330000        0.6666670000        0.1448888221
+S             0.6666670000        0.3333330000        0.6448888221
+S             0.3333330000        0.6666670000        0.3551111779
+S             0.6666670000        0.3333330000        0.8551111779
+Mo            0.6666670000        0.3333330000        0.2500000000
+Mo            0.3333330000        0.6666670000        0.7500000000
+K_POINTS {automatic}
+12 12 6 0 0 0

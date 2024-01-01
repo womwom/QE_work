@@ -1,0 +1,6 @@
+&bands
+outdir = './STO',
+prefix = 'STO',
+filband = 'STO.band',
+lsym = .true.
+/

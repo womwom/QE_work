@@ -1,0 +1,62 @@
+&CONTROL
+calculation = 'scf'
+prefix = 'YBCO7'
+restart_mode = 'from_scratch'
+outdir='./YBCO7'
+pseudo_dir='~/q-e/pseudo'
+tprnfor   = .true.
+/
+&SYSTEM
+   ntyp             = 6
+   nat              = 13
+   ibrav            = 8
+   a = 3.86075890416
+   b = 3.93916841461
+   c = 11.7722190868
+   ecutwfc = 90
+   ecutrho = 720
+   occupations = 'smearing'
+   smearing = 'm-p'
+   degauss = 0.03
+   nspin = 2
+   starting_magnetization(4) = 0.5
+   starting_magnetization(5) = -0.5
+/
+&ELECTRONS
+    mixing_beta = 0.3,
+    conv_thr = 1d-9
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Y 88.90584 Y_pbe_v1.uspp.F.UPF
+Ba 137.327 Ba.pbe-spn-kjpaw_psl.1.0.0.UPF
+Cu 63.546 Cu.paw.z_11.ld1.psl.v1.0.0-low.upf
+Cu1 63.546 Cu.paw.z_11.ld1.psl.v1.0.0-low.upf
+Cu2 63.546 Cu.paw.z_11.ld1.psl.v1.0.0-low.upf
+O 15.999 O.pbe-n-kjpaw_psl.0.1.UPF
+
+K_POINTS automatic
+4 4 4 0 0 0
+
+ATOMIC_POSITIONS (crystal)
+Y                0.5000000000        0.5000000000        0.4999999673
+Ba               0.5000000000        0.5000000000        0.1830956677
+Ba               0.5000000000        0.5000000000        0.8169044650
+Cu               0.0000000000        0.0000000000        0.0000000860
+Cu1              0.0000000000        0.0000000000        0.3542261697
+Cu2              0.0000000000        0.0000000000        0.6457732372
+O                0.5000000000        0.0000000000        0.3786582848
+O                0.5000000000        0.0000000000        0.6213418313
+O                0.0000000000        0.5000000000        0.3775406353
+O                0.0000000000        0.5000000000        0.6224594844
+O                0.0000000000        0.5000000000        0.0000000581
+O                0.0000000000        0.0000000000        0.1591179113
+O                0.0000000000        0.0000000000        0.8408822021
+
+HUBBARD (ortho-atomic)
+U Cu1-3d 10
+U Cu2-3d 10

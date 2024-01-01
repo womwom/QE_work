@@ -1,0 +1,7 @@
+&DOS
+    prefix='YBCO.NoU'
+    outdir='./YBCO.NoU'
+    fildos='YBCO7.dos'
+    emin=5
+    emax=25
+/

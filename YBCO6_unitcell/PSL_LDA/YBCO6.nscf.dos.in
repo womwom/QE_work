@@ -1,0 +1,49 @@
+&CONTROL
+calculation = 'nscf'
+prefix = 'YBCO6'
+restart_mode = 'from_scratch'
+outdir='./YBCO6'
+pseudo_dir='~/q-e/pslibrary/pz/PSEUDOPOTENTIALS'
+tprnfor   = .true.
+wf_collect    = .true.
+verbosity     = 'high'
+/
+&SYSTEM
+   ibrav            = 6
+   ntyp             = 4
+   nat              = 12
+   a = 3.79576657818
+   c = 11.5762603641
+   ecutwfc = 60
+   ecutrho = 540
+   occupations = 'tetrahedra'
+/
+&ELECTRONS
+    conv_thr = 1d-8
+    electron_maxstep = 500
+    mixing_mode      = 'plain'
+    mixing_beta      = 0.1
+/
+
+ATOMIC_SPECIES
+Y 88.90584 Y.pz-spn-rrkjus_psl.1.0.0.UPF
+Ba 137.327 Ba.pz-spn-rrkjus_psl.1.0.0.UPF 
+Cu 63.546 Cu.pz-dn-rrkjus_psl.1.0.0.UPF 
+O 15.999 O.pz-n-rrkjus_psl.1.0.0.UPF
+
+K_POINTS {automatic}
+8 8 8 1 1 1
+
+ATOMIC_POSITIONS {crystal}
+Y                0.5000000000        0.5000000000        0.5000000000
+Ba               0.5000000000        0.5000000000        0.1945431429
+Ba               0.5000000000        0.5000000000        0.8054568571
+Cu               0.0000000000        0.0000000000        0.0000000000
+Cu               0.0000000000        0.0000000000        0.3624107504
+Cu               0.0000000000        0.0000000000        0.6375892496
+O                0.5000000000        0.0000000000        0.3783500255
+O                0.5000000000        0.0000000000        0.6216499745
+O                0.0000000000        0.5000000000        0.3783738029
+O                0.0000000000        0.5000000000        0.6216261971
+O                0.0000000000        0.0000000000        0.1517527518
+O                0.0000000000        0.0000000000        0.8482472482

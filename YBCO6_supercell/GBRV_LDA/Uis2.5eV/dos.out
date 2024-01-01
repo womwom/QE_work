@@ -1,0 +1,55 @@
+
+     Program DOS v.7.2 starts on  2Jan2024 at  1: 0:13 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     4 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       4
+     8000 MiB available memory on the printing compute node when the environment starts
+ 
+
+     Reading xml data from directory:
+
+     ./YBCO6/YBCO6.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        2210     984    258               238514    70654    9434
+     Max        2211     985    259               238519    70656    9439
+     Sum        8841    3937   1033               954065   282619   37743
+ 
+     Using Slab Decomposition
+ 
+
+     Check: negative core charge=   -0.000002
+
+     negative rho (up, down):  3.570E-01 3.570E-01
+
+     Tetrahedra used
+
+ 
+     DOS          :     12.20s CPU     13.56s WALL
+
+ 
+   This run was terminated on:   1: 0:27   2Jan2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

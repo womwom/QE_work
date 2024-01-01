@@ -1,0 +1,6 @@
+&bands
+outdir = './NovdW/tetrahedra',
+prefix = 'MoS2.NovdW.tetrahedra',
+filband = 'MoS2.NovdW.tetrahedra.band',
+lsym = .true.
+/

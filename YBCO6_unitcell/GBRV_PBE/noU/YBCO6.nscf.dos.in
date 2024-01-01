@@ -1,0 +1,55 @@
+&CONTROL
+calculation = 'nscf'
+prefix = 'YBCO6'
+restart_mode = 'from_scratch'
+outdir='./YBCO6'
+pseudo_dir='~/q-e/pseudo/all_pbe_UPF_v1.5'
+tprnfor   = .true.
+wf_collect    = .true.
+verbosity     = 'high'
+forc_conv_thr = 1D-3
+etot_conv_thr = 1D-4
+/
+&SYSTEM
+   ibrav            = 6
+   ntyp             = 4
+   nat              = 12
+   a = 3.874021560
+   c = 11.69059675
+   ecutwfc = 90
+   ecutrho = 720
+   occupations = 'tetrahedra'
+/
+&ELECTRONS
+    conv_thr = 1d-8
+    electron_maxstep = 500
+    mixing_mode      = 'plain'
+    mixing_beta      = 0.1
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Y 88.90584 y_pbe_v1.4.uspp.F.UPF
+Ba 137.327 ba_pbe_v1.uspp.F.UPF
+Cu 63.546 cu_pbe_v1.2.uspp.F.UPF
+O 15.999 o_pbe_v1.2.uspp.F.UPF
+
+K_POINTS {automatic}
+8 8 8 1 1 1
+
+ATOMIC_POSITIONS {crystal}
+Y                0.5000000000        0.5000000000        0.5000000000
+Ba               0.5000000000        0.5000000000        0.1860969432
+Ba               0.5000000000        0.5000000000        0.8139030568
+Cu               0.0000000000        0.0000000000        0.0000000000
+Cu               0.0000000000        0.0000000000        0.3569661441
+Cu               0.0000000000        0.0000000000        0.6430338559
+O                0.5000000000        0.0000000000        0.3771016857
+O                0.5000000000        0.0000000000        0.6228983143
+O                0.0000000000        0.5000000000        0.3760135151
+O                0.0000000000        0.5000000000        0.6239864849
+O                0.0000000000        0.0000000000        0.1559218894
+O                0.0000000000        0.0000000000        0.8440781106

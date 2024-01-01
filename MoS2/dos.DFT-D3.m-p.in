@@ -1,0 +1,5 @@
+&dos
+outdir = './DFT-D3/m-p',
+prefix = 'MoS2.DFT-D3.m-p',
+fildos = 'MoS2.DFT-D3.m-p.dos'
+/ 

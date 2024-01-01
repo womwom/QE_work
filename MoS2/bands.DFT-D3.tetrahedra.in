@@ -1,0 +1,6 @@
+&bands
+outdir = './DFT-D3/tetrahedra',
+prefix = 'MoS2.DFT-D3.tetrahedra',
+filband = 'MoS2.DFT-D3.tetrahedra.band',
+lsym = .true.
+/

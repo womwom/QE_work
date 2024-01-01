@@ -1,0 +1,6 @@
+&bands
+outdir = './YBCO6',
+prefix = 'YBCO6',
+filband = 'YBCO6.band',
+lsym = .true.
+/

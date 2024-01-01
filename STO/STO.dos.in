@@ -1,0 +1,7 @@
+&DOS
+    prefix='STO'
+    outdir='./STO'
+    fildos='STO.dos'
+    emin=5
+    emax=17
+/

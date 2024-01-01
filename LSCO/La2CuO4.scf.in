@@ -1,0 +1,53 @@
+&CONTROL
+calculation = 'scf'
+prefix = 'La2CuO4'
+restart_mode = 'from_scratch'
+outdir='./La2CuO4'
+pseudo_dir='~/q-e/pslibrary/pz/PSEUDOPOTENTIALS'
+verbosity     = 'high'
+forc_conv_thr = 1D-3
+etot_conv_thr = 1D-4
+/
+&SYSTEM
+   ibrav            = 6
+   ntyp             = 3
+   nat              = 14
+   a = 3.81380
+   c = 13.22490
+   ecutwfc = 90
+   ecutrho = 720
+   occupations = 'smearing'
+   smearing = 'm-p'
+   degauss = 0.01
+/
+&ELECTRONS
+    conv_thr = 1d-8
+    electron_maxstep = 500
+    mixing_mode      = 'plain'
+    mixing_beta      = 0.05
+    ! diagonalization = 'cg'
+/
+
+ATOMIC_SPECIES
+La 138.91 La.pz-spfn-kjpaw_psl.1.0.0.UPF
+Cu 63.546 Cu.pz-dn-rrkjus_psl.1.0.0.UPF 
+O 15.999 O.pz-n-rrkjus_psl.1.0.0.UPF
+
+K_POINTS automatic
+2 2 2 0 0 0
+
+ATOMIC_POSITIONS (crystal)
+La         0.00000    0.00000    0.36089
+La         0.50000    0.50000    0.13911
+La         0.50000    0.50000    0.86089
+La         0.00000    0.00000    0.63911
+Cu         0.00000    0.00000    0.00000
+Cu         0.50000    0.50000    0.50000
+O          0.00000    0.50000    0.00000
+O          0.50000    0.00000    0.00000
+O          0.00000    0.00000    0.18623
+O          0.50000    0.50000    0.31377
+O          0.50000    0.00000    0.50000
+O          0.00000    0.50000    0.50000
+O          0.50000    0.50000    0.68623
+O          0.00000    0.00000    0.81377

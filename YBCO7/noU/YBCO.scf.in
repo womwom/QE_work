@@ -1,0 +1,56 @@
+&CONTROL
+calculation = 'scf'
+prefix = 'YBCO.NoU'
+restart_mode = 'from_scratch'
+outdir='./YBCO.NoU'
+pseudo_dir='~/q-e/pseudo'
+tprnfor   = .true.
+/
+&SYSTEM
+   ntyp             = 6
+   nat              = 13
+   ibrav            = 0
+/
+&ELECTRONS
+    mixing_beta = 0.3,
+    conv_thr = 1d-9
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Y 88.90584 Y_pbe_v1.uspp.F.UPF
+Ba 137.327 Ba.pbe-spn-kjpaw_psl.1.0.0.UPF
+Cu 63.546 Cu.paw.z_11.ld1.psl.v1.0.0-low.upf
+Cu1 63.546 Cu.paw.z_11.ld1.psl.v1.0.0-low.upf
+Cu2 63.546 Cu.paw.z_11.ld1.psl.v1.0.0-low.upf
+O 15.999 O.pbe-n-kjpaw_psl.0.1.UPF
+
+K_POINTS automatic
+4 4 4 0 0 0
+
+CELL_PARAMETERS angstrom
+3.82030000000000 0.00000000000000 0.00000000000000
+0.00000000000000 3.88548000000000 0.00000000000000
+0.00000000000000 0.00000000000000 11.68349000000000
+
+ATOMIC_POSITIONS (angstrom)
+Y                1.9101500000        1.9427400000        5.8417450000
+Ba               1.9101500000        1.9427400000        2.1057400316
+Ba               1.9101500000        1.9427400000        9.5777499684
+Cu               0.0000000000        0.0000000000        0.0000000000
+Cu1               0.0000000000        0.0000000000        4.1234817139
+Cu2               0.0000000000        0.0000000000        7.5600082861
+O                0.0000000000        1.9427400000        0.0000000000
+O                1.9101500000        0.0000000000        4.4234708482
+O                1.9101500000        0.0000000000        7.2600191518
+O                0.0000000000        1.9427400000        4.4202432643
+O                0.0000000000        1.9427400000        7.2632467357
+O                0.0000000000        0.0000000000        1.8781508590
+O                0.0000000000        0.0000000000        9.8053391410
+
+HUBBARD (ortho-atomic)
+U Cu1-3d 10
+U Cu2-3d 10

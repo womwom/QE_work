@@ -1,0 +1,50 @@
+&CONTROL
+calculation = 'vc-relax'
+prefix = 'STO'
+restart_mode = 'from_scratch'
+outdir='./STO'
+pseudo_dir='~/q-e/pslibrary/pz/PSEUDOPOTENTIALS'
+tprnfor   = .true.
+wf_collect    = .true.
+verbosity     = 'high'
+forc_conv_thr = 1D-3
+etot_conv_thr = 1D-4
+/
+&SYSTEM
+   ibrav            = 1
+   ntyp             = 3
+   nat              = 5
+   a = 3.896
+   ecutwfc = 90
+   ecutrho = 720
+   occupations = 'smearing'
+   smearing = 'm-p'
+   degauss = 0.05
+/
+&ELECTRONS
+    conv_thr = 1d-8
+    electron_maxstep = 500
+    mixing_mode      = 'plain'
+    mixing_beta      = 0.05
+    ! diagonalization = 'cg'
+/
+&IONS
+ion_dynamics = 'bfgs'
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Sr 87.62 Sr.pz-spn-kjpaw_psl.1.0.0.UPF
+Ti 47.867 Ti.pz-spn-kjpaw_psl.1.0.0.UPF
+O 15.999 O.pz-n-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+2 2 2 0 0 0
+
+ATOMIC_POSITIONS (crystal)
+Ti  0.5000000000 0.5000000000 0.5000000000
+Sr  0.0000000000  0.0000000000  0.0000000000
+O  0.5000000000  0.5000000000  0.0000000000
+O  0.0000000000  0.5000000000  0.5000000000
+O  0.5000000000  0.0000000000  0.5000000000
