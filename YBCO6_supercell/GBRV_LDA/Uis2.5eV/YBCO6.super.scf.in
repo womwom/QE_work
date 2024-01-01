@@ -47,7 +47,7 @@ Cu2 63.546 cu_lda_v1.2.uspp.F.UPF
 O 15.999 o_lda_v1.2.uspp.F.UPF
 
 K_POINTS automatic
-2 2 2 0 0 0
+4 4 2 0 0 0
 
 ATOMIC_POSITIONS (crystal)
 Y                0.2500000000        0.2500000000        0.5000000000
