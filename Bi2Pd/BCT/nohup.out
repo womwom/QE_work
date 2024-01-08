@@ -1,0 +1,25 @@
+from test_input_xml: input file not opened or empty
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+Abort(1) on node 1 (rank 1 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 1
+     Input file > Reading   48 bands at     51 k-points
+Range:  -11.9950   18.5490eV  Emin, Emax, [firstk, lastk] > high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   0.0000
+high-symmetry point:  0.0000 0.0000 0.5113   x coordinate   0.5113
+high-symmetry point:  0.0000 0.0000 1.0226   x coordinate   1.0226
+high-symmetry point:  1.0000 0.0000 0.7670   x coordinate   2.0548
+high-symmetry point:  2.0000 0.0000 0.5113   x coordinate   3.0870
+high-symmetry point:  2.0000-1.0000 0.5113   x coordinate   4.0870
+high-symmetry point:  2.0000-2.0000 0.5113   x coordinate   5.0870
+high-symmetry point:  2.0000-2.0000 0.2557   x coordinate   5.3426
+high-symmetry point:  2.0000-2.0000 0.0000   x coordinate   5.5983
+high-symmetry point:  1.8000-1.8000 0.1023   x coordinate   5.8990
+high-symmetry point:  1.6000-1.6000 0.2045   x coordinate   6.1998
+high-symmetry point:  1.4000-1.4000 0.3068   x coordinate   6.5006
+high-symmetry point:  1.2000-1.2000 0.4091   x coordinate   6.8013
+high-symmetry point:  1.0000-1.0000 0.5113   x coordinate   7.1021
+high-symmetry point:  0.8000-0.8000 0.6136   x coordinate   7.4028
+high-symmetry point:  0.6000-0.6000 0.7158   x coordinate   7.7036
+high-symmetry point:  0.4000-0.4000 0.8181   x coordinate   8.0044
+high-symmetry point:  0.2000-0.2000 0.9204   x coordinate   8.3051
+high-symmetry point:  0.0000 0.0000 1.0226   x coordinate   8.6059
+output file (gnuplot/xmgr) > bands in gnuplot/xmgr format written to file Bi2Pd.band.xmgr                                                                                                                                                                                                                                                 
+output file (ps) > Efermi > deltaE, reference E (for tics) bands in PostScript format written to file Bi2Pd.band.ps                                                                                                                                                                                                                                                   

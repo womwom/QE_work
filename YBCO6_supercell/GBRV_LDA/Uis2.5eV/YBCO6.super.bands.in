@@ -3,7 +3,7 @@ calculation = 'bands'
 prefix = 'YBCO6'
 restart_mode = 'from_scratch'
 outdir='./YBCO6.scf'
-pseudo_dir='~/q-e/pseudo/all_pbe_UPF_v1.5'
+pseudo_dir='~/q-e/pseudo/gbrv_lda'
 tprnfor   = .true.
 wf_collect    = .true.
 verbosity     = 'high'
@@ -35,12 +35,12 @@ ion_dynamics = 'bfgs'
 /
 
 ATOMIC_SPECIES
-Y 88.90584 y_pbe_v1.4.uspp.F.UPF
-Ba 137.327 ba_pbe_v1.uspp.F.UPF
-Cu 63.546 cu_pbe_v1.2.uspp.F.UPF
-Cu1 63.546 cu_pbe_v1.2.uspp.F.UPF
-Cu2 63.546 cu_pbe_v1.2.uspp.F.UPF
-O 15.999 o_pbe_v1.2.uspp.F.UPF
+Y 88.90584 y_lda_v1.4.uspp.F.UPF
+Ba 137.327 ba_lda_v1.uspp.F.UPF
+Cu 63.546 cu_lda_v1.2.uspp.F.UPF
+Cu1 63.546 cu_lda_v1.2.uspp.F.UPF
+Cu2 63.546 cu_lda_v1.2.uspp.F.UPF
+O 15.999 o_lda_v1.2.uspp.F.UPF
 
 K_POINTS {crystal_b}
 6

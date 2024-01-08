@@ -1,0 +1,6 @@
+&bands
+outdir = './Bi2Pd',
+prefix = 'Bi2Pd',
+filband = 'Bi2Pd.band',
+lsym = .true.
+/

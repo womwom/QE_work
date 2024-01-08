@@ -1,0 +1,48 @@
+&CONTROL
+calculation = 'nscf'
+prefix = 'Bi2Pd'
+restart_mode = 'from_scratch'
+outdir = './Bi2Pd'
+pseudo_dir = '~/q-e/pseudo/pslibrary/rel-pz/PSEUDOPOTENTIALS'
+verbosity     = 'high'
+forc_conv_thr = 1D-3
+etot_conv_thr = 1D-4
+/
+&SYSTEM
+   ibrav            = 6
+   ntyp             = 2
+   nat              = 3
+   a = 3.38668
+   c = 13.24694
+   ecutwfc = 60
+   ecutrho = 540
+   occupations = 'fixed'
+   lspinorb = .true.
+   noncolin = .true.
+   nbnd = 160
+/
+&ELECTRONS
+    conv_thr = 1d-8
+    electron_maxstep = 500
+    mixing_mode      = 'plain'
+    mixing_beta      = 0.1
+    ! diagonalization = 'cg'
+/
+
+ATOMIC_SPECIES
+Bi 208.98 Bi.rel-pz-dn-rrkjus_psl.1.0.0.UPF
+Pd 106.42 Pd.rel-pz-n-rrkjus_psl.1.0.0.UPF 
+
+ATOMIC_POSITIONS (crystal)
+Bi 0.0 0.63232 -0.36768
+Bi 0.0 0.36768 0.36768
+Pd 0.0 0.0 0.0
+
+K_POINTS {crystal_b}
+6
+0		0		0		10
+0.5		0.5		0.5		10
+0.5		0.5		0.0		10
+0.75	0.25	0.25	10
+0.5		0.0		0.0		10
+0.5		0.5		0.5		10

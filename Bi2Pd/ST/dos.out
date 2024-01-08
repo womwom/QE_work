@@ -1,5 +1,5 @@
 
-     Program DOS v.7.2 starts on  2Jan2024 at 19:15:14 
+     Program DOS v.7.2 starts on  6Jan2024 at 14:36:22 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -14,12 +14,14 @@
 
      MPI processes distributed on     1 nodes
      R & G space division:  proc/nbgrp/npool/nimage =       4
-     6096 MiB available memory on the printing compute node when the environment starts
+     7111 MiB available memory on the printing compute node when the environment starts
  
 
      Reading xml data from directory:
 
-     ./YBCO6/YBCO6.save/
+     ./Bi2Pd/Bi2Pd.save/
+     file Bi.rel-pz-dn-rrkjus_psl.1.0.0.UPF: wavefunction(s)  5D 5D renormalized
+     file Pd.rel-pz-n-rrkjus_psl.1.0.0.UPF: wavefunction(s)  4D 4D renormalized
 
      IMPORTANT: XC functional enforced from input :
      Exchange-correlation= PZ
@@ -31,24 +33,20 @@
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min        2210     984    261               238514    70654    9754
-     Max        2211     985    263               238519    70656    9757
-     Sum        8841    3937   1049               954065   282619   39023
+     Min         439     194     59                54325    16096    2617
+     Max         440     195     61                54338    16109    2620
+     Sum        1757     777    241               217317    64403   10475
  
      Using Slab Decomposition
  
 
-     Check: negative core charge=   -0.000002
-
-     negative rho (up, down):  3.570E-01 3.570E-01
-
      Tetrahedra used
 
  
-     DOS          :     15.39s CPU     16.28s WALL
+     DOS          :     51.57s CPU     51.89s WALL
 
  
-   This run was terminated on:  19:15:30   2Jan2024            
+   This run was terminated on:  14:37:14   6Jan2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

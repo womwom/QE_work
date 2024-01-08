@@ -1,0 +1,77 @@
+
+     Program BANDS v.7.2 starts on  3Jan2024 at 10:33:32 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     4 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       4
+     1747 MiB available memory on the printing compute node when the environment starts
+ 
+
+     Reading xml data from directory:
+
+     ./YBCO6/YBCO6.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        2210     984    256               238514    70654    9367
+     Max        2211     985    260               238519    70656    9368
+     Sum        8841    3937   1033               954065   282619   37471
+ 
+     Using Slab Decomposition
+ 
+
+     Check: negative core charge=   -0.000002
+
+     negative rho (up, down):  3.570E-01 3.570E-01
+     Reading collected, re-writing distributed wavefunctions
+     high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   0.0000
+     high-symmetry point:  0.2500 0.0000 0.0000   x coordinate   0.2500
+     high-symmetry point:  0.2500 0.2500 0.0000   x coordinate   0.5000
+     high-symmetry point:  0.0000 0.2500 0.0000   x coordinate   0.7500
+     high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   1.0000
+     high-symmetry point:  0.2500 0.2500 0.0000   x coordinate   1.3536
+
+     Plottable bands (eV) written to file YBCO6.band.gnu
+     Bands written to file YBCO6.band
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 132953 RUNNING AT DESKTOP-9GB854E
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 132954 RUNNING AT DESKTOP-9GB854E
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 132955 RUNNING AT DESKTOP-9GB854E
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 132956 RUNNING AT DESKTOP-9GB854E
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================

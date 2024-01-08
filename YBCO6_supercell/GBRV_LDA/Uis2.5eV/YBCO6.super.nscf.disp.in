@@ -1,5 +1,5 @@
 &CONTROL
-calculation = 'nscf'
+calculation = 'bands'
 prefix = 'YBCO6'
 restart_mode = 'from_scratch'
 outdir='./YBCO6'
@@ -16,8 +16,9 @@ etot_conv_thr = 1D-4
    nat              = 48
    ecutwfc = 60
    ecutrho = 540
-   occupations = 'tetrahedra'
+   occupations = 'fixed'
    nspin = 2
+   nbnd = 372
    ! noncolin = .true.
    starting_magnetization(4) = 0.1
    starting_magnetization(5) = -0.1
@@ -44,8 +45,6 @@ Cu1 63.546 cu_lda_v1.2.uspp.F.UPF
 Cu2 63.546 cu_lda_v1.2.uspp.F.UPF
 O 15.999 o_lda_v1.2.uspp.F.UPF
 
-K_POINTS automatic
-4 4 4 1 1 1
 
 ATOMIC_POSITIONS (crystal)
 Y                0.2500000000        0.2500000000        0.5000000000
@@ -100,3 +99,12 @@ O                0.5000000000        0.7500000000        0.6216261971
 HUBBARD (ortho-atomic)
 U Cu1-3d 2.5 
 U Cu2-3d 2.5 
+
+K_POINTS {crystal_b}
+6
+0.0     0.0     0.0     20
+0.25    0.0     0.0     20
+0.25    0.25    0.0     20
+0.0     0.25    0.0     20
+0.0     0.0     0.0     20
+0.25    0.25    0.0     20

@@ -1,0 +1,8 @@
+&DOS
+    prefix='Bi2Pd'
+    outdir='./Bi2Pd'
+    fildos='Bi2Pd.dos'
+    ! emin=0
+    ! emax=25
+/
+
